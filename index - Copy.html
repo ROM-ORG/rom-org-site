@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="./style.css"/>
+		<script src="main.js"></script>
+		<link rel="stylesheet" href="./material/material.min.css">
+		<script src="./material/material.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+		<link rel="icon" type="image/png" href="./img/cyanogen.jpg"/>
+		<title>Devices - Alexenferman</title>
+ 
+      <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+	  <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+
+	</head>
+	<body>
+
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+            mdl-layout--fixed-header">
+  <header style="height: 0px;" class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="sample"
+                 id="fixed-header-drawer-exp">
+        </div>
+      </div>
+    </div>
+  </header>
+  <div style="padding: 0px;" class="mdl-layout__drawer">
+    
+	<div class="container">
+	<div class="bottom-left">Top Left</div>
+	</div>
+	
+	 <div class="hero-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/top.png');">
+  <div class="hero-text">
+  <img src="./img/cyanogen.jpg" style="border-radius: 50%; width:40px; "/>
+  <p></p>
+    <h6>Custom Roms</h6>
+  </div>
+</div> 
+	
+	<div class="collapsible-header waves-effect"><i class="material-icons">arrow_back</i><h6 class="leftbutton">Back</h6><h6 class="codename">alexenferman.com</h6></div>
+    <div class="collapsible-header waves-effect"><i class="material-icons">home</i><h6 class="leftbutton">Home</h6></div>
+	
+	<ul class="collapsible expandable">
+    <li>
+      <div class="collapsible-header waves-effect"><i class="material-icons">smartphone</i><h6 class="leftbutton">Alcatel</h6></div>
+      <div id="/alcatel/california" onclick="Navigate(this.id)"  class="collapsible-body">
+	  <div class="collapsible-header waves-effect">
+	  <i><img width="25px" src="./img/idolmini.jpg"/></i>
+	  <h6 class="leftbutton">Idol Mini 6012a</h6>
+	  <h6 class="codename">California</h6></div>
+	  </div>
+    </li>
+	<li>
+      <div class="collapsible-header waves-effect"><i class="material-icons">smartphone</i><h6 class="leftbutton">Motorola</h6></div>
+      <div class="collapsible-body">
+	   <div class="collapsible-header waves-effect"><i><img width="25px" src="./img/ginna.jpg"/></i><h6 class="leftbutton">Moto E 2020</h6><h6 class="codename">ginna</h6></div>
+	  </div>
+    </li>
+    <li>
+      <div class="collapsible-header waves-effect"><i class="material-icons">smartphone</i><h6 class="leftbutton">MyGica</h6></div>
+      <div class="collapsible-body">
+	  <div class="collapsible-header waves-effect"><i><img width="25px" src="./img/mygica.jpg"/></i><h6 class="leftbutton">ATV195X</h6><h6 class="codename">S905X</h6></div>
+	  </div>
+    </li>
+    <li>
+      <div class="collapsible-header waves-effect"><i class="material-icons">smartphone</i><h6 class="leftbutton">Samsung</h6></div>
+      <div class="collapsible-body">
+	  <div id="/samsung/d2att" onclick="Navigate(this.id)" class="collapsible-header waves-effect"><i><img width="25px" src="./img/d2att.jpg"/></i><h6 class="leftbutton">Galaxy SIII i747</h6><h6 class="codename">d2att/d2can</h6></div>
+	  <div class="collapsible-header waves-effect"><i><img width="25px" src="./img/j1xlte.jpg"/></i><h6 class="leftbutton">Galaxy J1 2016</h6><h6 class="codename">j1xlte</h6></div>
+	  </div>
+    </li>
+    <li>
+      <div class="collapsible-header waves-effect"><i class="material-icons">smartphone</i><h6 class="leftbutton">ZTE</h6></div>
+      <div class="collapsible-body">
+	     <div class="collapsible-header waves-effect"><i><img width="25px" src="./img/achill.png"/></i><h6 class="leftbutton">Avid Plus</h6><h6 class="codename">achill</h6></div>
+	  </div>
+    </li>
+  </ul>
+
+  </div>
+  <main style="padding: 20px" class="mdl-layout__content">
+    <div class="page-content">
+ <!-- Content -->
+	
+<iframe id="devicewindow" class="rightpage"> 
+    <h6>404 Not Found</h6>
+</iframe>
+	
+	</div>
+  </main>
+</div>
+
+
+<script>
+var queryString = window.location.search;
+console.log(queryString);
+
+if (queryString) {
+    queryString = queryString.slice(1);
+	console.log(queryString);
+	document.getElementById('devicewindow').src="./devices" + queryString + ".html";
+	document.getElementById("devicewindow").contentWindow.location.hash = "twrp";
+}
+		
+function Navigate(clicked_id) {
+device = clicked_id;
+window.location.search = device
+console.log(device);
+}
+
+function up() {
+del = document.getElementsByClassName("folder");
+	for(var i = 0; i < del.length; i++)
+    {del[i].style.display="none";}
+currentfolder = document.getElementById("path").innerHTML;
+currentfolder = currentfolder.substr(0, currentfolder.lastIndexOf("/"));
+if (currentfolder === "") {
+	var currentfolder = "/"
+}
+document.getElementById("path").innerHTML = currentfolder;
+document.getElementById(currentfolder).style.display = "block"
+
+console.log(currentfolder)
+window.location.search = currentfolder
+
+}
+
+</script>
+  
+	</body>
+</html>
