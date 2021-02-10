@@ -1,0 +1,185 @@
+body {
+	transition: 0.5s
+}
+
+hr {
+border: none;
+height: 1px;
+margin: 0;
+flex-shrink: 0;
+background-color: rgba(127, 127, 127, 0.12);
+}
+
+.rightpage {
+position: absolute; height: 96%; border: none; width: 97%
+}
+
+.codename {
+	padding-top: 7px;	
+	color: #aaaaaa;
+}
+
+.padding1 {
+	padding:20px;
+}
+
+.leftbutton {
+	line-height: 0px; 
+	padding-top: 15px
+}
+
+.leftbuttonup {
+	padding-top: 15px
+}
+
+.tabbutton {
+	padding-top: 10px;
+	line-height: 14px; 
+	display: inline-block;
+	padding-left: 5px;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-image {
+  height: 15%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  position: absolute;
+  bottom: -20px;
+  left: 76px;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.content {
+	max-width: 1500px;
+	margin: auto;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.filepathcontent {
+	padding-left: 10px;
+	padding-bottom: 6px;
+	max-width: 1500px;
+    margin: auto;
+}
+
+.folderimg {
+	width:30px; 
+	padding: 0px 20px 0px 0px; 
+	display: inline-block;
+}
+
+a {
+	color: black;
+	text-decoration:none; 
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.filemgrdlcard {
+  transition: 0.3s;
+  width: 100%;
+  cursor: pointer;
+}
+
+.filemgrdlcard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.filedlcontainer {
+  padding: 0.1px 30px 4px 30px;
+  line-height: 0;
+}
+
+.filepadding {
+	padding: 5px 0px 5px 0px;
+}
+
+.articlehorcardpadding {
+	padding: 10px 0px 10px 0px;
+}
+
+.alertcard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+}
+
+.alertcard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.alertcontainer {
+  padding: 0.1px 30px 4px 30px;
+  line-height: 0;
+}
+
+.cardsurrounding {
+	padding: 8px;
+}
+
+.card {
+ color: black;
+ width: 400px;
+ background: #fff;
+ display: inline-block;
+ border: 1px solid #ddd;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cardimage {
+ float: left;
+}
+
+.cardimage2 {
+ padding: 12px;
+ float: left;
+ width: 55px;
+}
+
+.cardcontent {
+ float: left;
+ overflow: hidden;
+ padding: 5px;
+}
+
+.coll-group {
+	padding-left: 8px;
+    padding-right: 8px;
+	
+}
+
+.comments {
+ z-index:2;
+ position: fixed !important; 
+ bottom: 40px; 
+ left: 10px;
+}
